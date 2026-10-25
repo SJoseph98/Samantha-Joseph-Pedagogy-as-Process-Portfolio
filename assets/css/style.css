@@ -268,8 +268,33 @@ main {
 .apa p { margin: 0; text-indent: .5in; }
 .apa p.no-indent, .apa p.placeholder { text-indent: 0; }
 
+.apa .center { text-align: center; }
+.apa h3 { margin-top: 1em; }
+
 /* APA reference list: hanging indent */
-.apa .references p { text-indent: -.5in; padding-left: .5in; }
+.apa .references p { text-indent: -.5in; padding-left: .5in; overflow-wrap: anywhere; }
+
+/* Lists inside writing */
+.apa ol.apa-list, .apa ul.goal-list { margin: 0; padding-left: .5in; }
+.apa ul.goal-list { list-style: none; padding-left: 0; }
+
+/* Links to documents */
+.apa ul.doc-links { list-style: none; margin: 0; padding: 0; }
+.apa ul.doc-links a { font-weight: 700; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.apa .doc-type { color: var(--ink-soft); font-size: .9em; }
+
+/* APA figures: bold number, italic title above the image */
+.apa-figure { margin: 1em 0; }
+.apa-figure figcaption { line-height: 2; margin-bottom: .5em; }
+.apa-figure img { display: block; width: 100%; height: auto; border: 2px solid var(--black); border-radius: 12px; background: var(--white); }
+
+/* APA tables: bold number, italic title, horizontal rules only */
+.apa-table { margin: 1em 0 1.5em; }
+.apa-table .table-scroll { overflow-x: auto; }
+.apa-table table { width: 100%; min-width: 520px; border-collapse: collapse; line-height: 1.5; font-size: .95em; }
+.apa-table th, .apa-table td { text-align: left; vertical-align: top; padding: .5em .6em; }
+.apa-table thead th { border-top: 2px solid var(--black); border-bottom: 1px solid var(--black); font-weight: 700; }
+.apa-table tbody tr:last-child td { border-bottom: 2px solid var(--black); }
 
 .word-count {
   display: inline-block;
