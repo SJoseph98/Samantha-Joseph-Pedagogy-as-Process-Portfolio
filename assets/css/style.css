@@ -240,6 +240,24 @@ main {
   padding: 1rem;
 }
 
+.card p:last-of-type { margin-bottom: 0; }
+
+.word-count {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: .15rem .8rem;
+  border: 2px solid var(--black);
+  border-radius: 999px;
+  background: var(--cream);
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+/* Letter to Self */
+.letter-date { margin-bottom: 1.25rem; }
+.letter-salutation { font-weight: 700; }
+.letter-signoff { margin-top: 1.5rem; }
+
 /* ---------- Home page ---------- */
 .hero {
   display: grid;
@@ -249,9 +267,10 @@ main {
   margin-bottom: 2.5rem;
 }
 .hero .card { margin-bottom: 0; text-align: center; }
+.hero-avatar { display: block; width: 100%; max-width: 420px; justify-self: center; }
 @media (max-width: 640px) {
   .hero { grid-template-columns: 1fr; }
-  .hero .image-placeholder { width: 70%; justify-self: center; }
+  .hero-avatar { width: 75%; }
 }
 
 .toc { list-style: none; padding: 0; margin: 0; }
