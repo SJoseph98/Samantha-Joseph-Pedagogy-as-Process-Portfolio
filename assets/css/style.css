@@ -10,6 +10,8 @@
 
   --font-heading: "Rubik", system-ui, sans-serif;
   --font-body: "Nunito", system-ui, sans-serif;
+  /* APA 7 approved font for all portfolio writing */
+  --font-apa: "Times New Roman", Times, serif;
 
   --sidebar-width: 320px;
   --radius: 22px;
@@ -240,7 +242,31 @@ main {
   padding: 1rem;
 }
 
-.card p:last-of-type { margin-bottom: 0; }
+/* ---------- APA 7 formatting for portfolio writing ----------
+   Times New Roman, double-spaced, left-aligned, 0.5 in first-line indent,
+   no extra space between paragraphs.
+   h2 = Level 1 (centred, bold), h3 = Level 2 (left, bold), h4 = Level 3 (left, bold italic).
+   Font sizes are larger than APA's 12 pt for screen reading (allowed by Samantha's lecturers). */
+.apa {
+  font-family: var(--font-apa);
+  font-size: 1.2rem;
+  line-height: 2;
+  text-align: left;
+}
+.apa h2, .apa h3, .apa h4 {
+  font-family: var(--font-apa);
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0 0 .4em;
+}
+.apa h2 { font-size: 1.6rem; text-align: center; }
+.apa h3, .apa h4 { font-size: 1.3rem; }
+.apa h4 { font-style: italic; }
+.apa p { margin: 0; text-indent: .5in; }
+.apa p.no-indent, .apa p.placeholder { text-indent: 0; }
+
+/* APA reference list: hanging indent */
+.apa .references p { text-indent: -.5in; padding-left: .5in; }
 
 .word-count {
   display: inline-block;
@@ -249,14 +275,14 @@ main {
   border: 2px solid var(--black);
   border-radius: 999px;
   background: var(--cream);
+  font-family: var(--font-body);
   font-size: .875rem;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 /* Letter to Self */
-.letter-date { margin-bottom: 1.25rem; }
-.letter-salutation { font-weight: 700; }
-.letter-signoff { margin-top: 1.5rem; }
+.apa p.letter-signoff { margin-top: 2em; }
 
 /* ---------- Home page ---------- */
 .hero {
