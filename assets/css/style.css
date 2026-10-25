@@ -286,6 +286,7 @@ main {
 /* APA figures: bold number, italic title above the image */
 .apa-figure { margin: 1em 0; }
 .apa-figure figcaption { line-height: 2; margin-bottom: .5em; }
+.apa .figure-note { margin-top: .5em; }
 .apa-figure img { display: block; width: 100%; height: auto; border: 2px solid var(--black); border-radius: 12px; background: var(--white); }
 
 /* APA tables: bold number, italic title, horizontal rules only */
