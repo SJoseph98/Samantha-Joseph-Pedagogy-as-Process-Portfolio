@@ -30,6 +30,7 @@ const SITE_NAV = [
     items: [
       ["Caption", "caption"],
       ["Lesson Plan with Technology Use and Supporting Resources", "lesson-plan-with-technology-use"],
+      ["Justification of Tools", "justification-of-tools"],
       ["Reflection", "reflection"],
     ],
   },
@@ -66,7 +67,10 @@ const SITE_NAV = [
   {
     title: "Course Documents",
     href: "course-documents.html",
-    items: [["Justification of tools", "justification-of-tools"]],
+    items: [
+      ["Accountability Statement", "accountability-statement"],
+      ["AI Declaration", "ai-declaration"],
+    ],
   },
 ];
 
