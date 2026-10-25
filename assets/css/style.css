@@ -11,7 +11,7 @@
   --font-heading: "Rubik", system-ui, sans-serif;
   --font-body: "Nunito", system-ui, sans-serif;
   /* APA 7 approved font for all portfolio writing */
-  --font-apa: "Times New Roman", Times, serif;
+  --font-apa: Georgia, "Times New Roman", serif;
 
   --sidebar-width: 320px;
   --radius: 22px;
@@ -243,7 +243,7 @@ main {
 }
 
 /* ---------- APA 7 formatting for portfolio writing ----------
-   Times New Roman, double-spaced, left-aligned, 0.5 in first-line indent,
+   Georgia (APA-approved), double-spaced, left-aligned, 0.5 in first-line indent,
    no extra space between paragraphs.
    h2 = Level 1 (centred, bold), h3 = Level 2 (left, bold), h4 = Level 3 (left, bold italic).
    Font sizes are larger than APA's 12 pt for screen reading (allowed by Samantha's lecturers). */
@@ -282,6 +282,7 @@ main {
 }
 
 /* Letter to Self */
+.apa p.letter-date { margin-bottom: 2em; }
 .apa p.letter-signoff { margin-top: 2em; }
 
 /* ---------- Home page ---------- */
